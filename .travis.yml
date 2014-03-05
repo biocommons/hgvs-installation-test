@@ -3,9 +3,12 @@ language: python
 python:
   - "2.7"
 
-before_script: sh -c "pip install --upgrade setuptools; pip install hgvs"
+before_script:
+  - pip install --upgrade setuptools
+  - pip install hgvs
 
-script: true
+script:
+  - python -c 'import hgvs; print hgvs.__version__'
 
 branches:
   only:
