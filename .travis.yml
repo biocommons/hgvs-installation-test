@@ -9,8 +9,4 @@ before_script:
 
 script:
   - python -c 'import hgvs; print hgvs.__version__'
-
-branches:
-  only:
-    - master
-    - dev
+  - python -c 'import doctest; doctest.testfile("README.rst")'
