@@ -2,6 +2,9 @@
 hgvs integration test
 =====================
 
+.. image:: https://travis-ci.org/reece/hgvs-installation-test.svg?branch=master
+    :target: https://travis-ci.org/reece/hgvs-installation-test
+
 This package is purely an integration test to ensure that the hgvs_ Python
 package installs and executes basic functions correctly. It provides no
 new code on its own.
