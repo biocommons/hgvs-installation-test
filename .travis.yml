@@ -8,4 +8,5 @@ before_install:
 
 script:
   - python -c 'import hgvs; print hgvs.__version__'
+  - python -c 'from hgvs.dataproviders.uta import connect; print str(connect())'
   - python -c 'import doctest; doctest.testfile("README.rst")'
