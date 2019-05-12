@@ -13,7 +13,9 @@ cache: pip
 install:
   - pip install tox-travis
 
-script: pytest
+script:
+  pip install -e .
+  pytest
 
 stages:
   - test
