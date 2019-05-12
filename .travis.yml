@@ -1,12 +1,19 @@
+dist: xenial
+
 language: python
 
 python:
   - "2.7"
+  - "3.5"
+  - "3.6"
+  - "3.7"
 
-before_install:
-  - pip install --upgrade setuptools
+cache: pip
 
-script:
-  - python -c 'import hgvs; print hgvs.__version__'
-  - python -c 'from hgvs.dataproviders.uta import connect; print str(connect())'
-  - python -c 'import doctest; doctest.testfile("README.rst")'
+install:
+  - pip install tox-travis
+
+stages:
+  - test
+  - deploy
+
