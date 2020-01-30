@@ -1,4 +1,4 @@
-gvs-integration-test
+hgvs-integration-test
 !!!!!!!!!!!!!!!!!!!!!
 
 .. image:: https://travis-ci.org/biocommons/hgvs-installation-test.svg?branch=master
